@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0A0A0A" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>M-Sec Cyber & AI Platform</title>
+    <style>
+      :root {
+        /* Light Mode Colors (RGB format for Tailwind opacity support) */
+        --color-primary: 255 255 255;      /* White */
+        --color-secondary: 243 244 246;    /* Gray 100 */
+        --color-text-primary: 17 24 39;    /* Gray 900 */
+        --color-text-secondary: 75 85 99;  /* Gray 600 */
+      }
+      
+      html.dark {
+        /* Dark Mode Colors */
+        --color-primary: 10 10 10;         /* #0A0A0A */
+        --color-secondary: 26 26 26;       /* #1A1A1A */
+        --color-text-primary: 224 224 224; /* #E0E0E0 */
+        --color-text-secondary: 160 160 160; /* #A0A0A0 */
+      }
+
+      body {
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'primary': 'rgb(var(--color-primary) / <alpha-value>)',
+              'secondary': 'rgb(var(--color-secondary) / <alpha-value>)',
+              'text-primary': 'rgb(var(--color-text-primary) / <alpha-value>)',
+              'text-secondary': 'rgb(var(--color-text-secondary) / <alpha-value>)',
+              'accent': {
+                'blue': '#00BFFF',
+                'green': '#00FF7F',
+              },
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary text-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

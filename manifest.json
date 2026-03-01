@@ -1,0 +1,16 @@
+{
+  "short_name": "M-Sec",
+  "name": "M-Sec Cyber & AI Platform",
+  "description": "A modern e-learning platform for students of Cybersecurity, AI, IT, and Information Security.",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0A0A0A",
+  "background_color": "#0A0A0A"
+}
